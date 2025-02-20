@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relájate - aplicación web de relajación</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+  <source src="../img/background.mp4" type="video/mp4">
+  Tu navegador no soporta videos.
+</video>
+    <header><h1>Respiremos :)</h1></header>
+
+    <main class="container">
+      <div class="circle"></div>
+
+      <p id="text">Empezar</p>
+
+      <div class="pointer-container">
+        <div class="pointer"></div>
+      </div>
+
+      <div class="gradient-circle"></div>
+    </main>
+
+    <aside class="audio-functions">
+      <div class="toggle-wrapper">
+        <label for="music" class="music">Mostrar música:</label>
+        <input type="checkbox" name="music" id="music" class="toggle">
+      </div>
+      <audio controls src="./audio/Namaste.mp3" class="player hidden" controlsList="nodownload">Tu navegador no admite el elemento audio.</audio>
+    </aside>
+    <footer class="credits">  <span></span>/Jose Perazza</footer>
+    <button class="share-btn"><img src="https://img.icons8.com/ios-glyphs/20/FFFFFF/share.png" alt="Share button"/></button></footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
